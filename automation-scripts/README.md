@@ -21,7 +21,7 @@ Prints the formatted word the requested number of times.
 - Main guard (`if __name__ == "__main__":`)
 
 ### Example Output
-![Output] (assets/word-printer-output.png)
+![Example Output of Word Printer Script](assets/word-printer-output.png)
 
 ### How to Run
 ```bash
