@@ -20,6 +20,9 @@ Prints the formatted word the requested number of times.
 - Basic exception handling (ValueError)
 - Main guard (`if __name__ == "__main__":`)
 
+### Example Output
+![Output] (assets/word-printer-output.png)
+
 ### How to Run
 ```bash
 python word-printer.py
