@@ -8,3 +8,7 @@ Automation and AI workflow projects including RPA, Python automation, and AI-pow
 - **Weather-Based Sales & Staffing Automation**  
   Scheduled Zapier workflow pulls Miami forecast, uses Gemini for intelligent recommendations (product focus, staffing adjustments, promotional messages), and emails formatted summaries/alerts. Demonstrates no-code AI automation for operational efficiency.  
   [Details](https://github.com/anthony-tipton-dev/ai-automation-portfolio/tree/main/weather-decision-engine)
+
+- **Automation Scripts**  
+  Python utilities demonstrating input validation, error handling, modular functions, and CLI interaction (e.g., word-printer tool with retry logic and case formatting).  
+  [View Folder →](https://github.com/anthony-tipton-dev/ai-automation-portfolio/tree/main/automation-scripts)
