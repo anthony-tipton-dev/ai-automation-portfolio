@@ -14,7 +14,7 @@ Automation and AI workflow projects including RPA, Python automation, and AI-pow
 A collection of small Python utilities demonstrating input validation, CLI tools, data handling, and more.
 
 ## Available Scripts
-- **[Word Printer Utility](./word-printer/README.md)**  
+- **[Word Printer Utility](./automation-scripts/word-printer)**  
   Command-line tool for printing formatted text with validation and retries.
 
 More scripts coming soon — each in its own subfolder with code, docs, and examples.
