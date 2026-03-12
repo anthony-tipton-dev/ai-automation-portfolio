@@ -55,4 +55,3 @@ Automated batch processing using UiPath Document Understanding + custom LLM prom
 - Sample Output Google Sheet: https://docs.google.com/spreadsheets/d/1iq0iYZ-H2KISH396eRveE5dK10SbKhBhRz8pkND4Gf4/edit?usp=drive_link  
 - Demo video/slides: https://drive.google.com/file/d/1eSlCKurm7DUzyCAh95t2MsSdQNcn9ajQ/view?usp=drive_link
 
-<img width="730" height="1093" alt="image" src="https://github.com/user-attachments/assets/1c2019d5-f23b-4843-bb1d-2820637304ba" />
