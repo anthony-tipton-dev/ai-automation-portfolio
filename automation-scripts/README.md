@@ -4,4 +4,4 @@ Collection of Python utilities focused on input handling, validation, and simple
 
 - **Word Printer**  
   Python utilities demonstrating input validation, error handling, modular functions, and CLI interaction (e.g., word-printer tool with retry logic and case formatting).  
-  [View Folder →](./automation-scripts/word-printer)
+  [View Folder →](./word-printer)
