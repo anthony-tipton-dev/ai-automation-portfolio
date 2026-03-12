@@ -1,82 +1,58 @@
 # AI-Powered Insurance Claim Processing Automation
 
-**Sprint 7 Final Project** – Demonstrates RPA (UiPath) + AI (LLM prompting) to automate insurance claim extraction, validation, risk analysis, and logging.
+**Sprint 7 Final Project** by Anthony Tipton  
+RPA (UiPath) + AI (LLM) automation that extracts, validates, and analyzes insurance claims.
 
 ### Problem
-Manual claim processing causes:
-- Slow times
-- Data entry errors
-- Missed validations
-- High costs
+Manual claim processing is slow, error-prone, and expensive.
 
-### Solution
-Automated batch workflow that:
-- Extracts data from claim forms using UiPath Document Understanding
-- Analyzes for risks/issues using custom LLM prompt (JSON output)
-- Validates fields (e.g., diagnosis/procedure codes, totals)
-- Handles errors/exceptions with try-catch + email alerts
-- Logs structured results (risk level, issues, confidence score) to Google Sheets
+![Challenges](assets/challenges.png)
 
-### Key Technologies
-- UiPath RPA (Document Extraction, Activities, Orchestrator concepts)
-- Generative AI / LLM prompting (for risk analysis without predefined models)
-- JSON parsing & validation
-- Google Sheets integration
-- Error handling & data cleaning (remove commas, convert types)
+### Solution & Workflow
+Automated batch processing using UiPath Document Understanding + custom LLM prompt.
 
-### Workflow Overview
-1. Manual trigger + variable init (HighTotalAmount, RiskLevel, etc.)
-2. Loop through claim files in folder
-3. Extract structured data
-4. Send to LLM with strict prompt → returns JSON (riskLevel, issues, confidence, etc.)
-5. Validate programmatically (e.g., diagnosis code format)
-6. Clean data & handle exceptions
-7. Write to Google Sheets via data table + Write Range
+![Workflow Diagram](assets/workflow-diagram.png)
 
-<grok-card data-id="6e0b34" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+### Key Steps
+1. Initialization & variable setup  
+![Initialization](assets/initialization.png)
 
+2. Loop through claim forms  
+![For Each File](assets/for-each-loop.png)
 
+3. AI Analysis (LLM Prompt)  
+![LLM Prompt](assets/llm-prompt.png)
 
-<grok-card data-id="0e0b8e" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+4. Error Handling & JSON Validation  
+![Error Handling](assets/error-handling.png)
 
+5. Data Cleaning & Google Sheets Output  
+![Data Cleaning](assets/data-cleaning.png)  
+![Google Sheets Example](assets/google-sheets-output.png)
 
-
-<grok-card data-id="f09c7a" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-
-### LLM Prompt Example
-Strict JSON-only output with rules for missing fields, fraud signals, format validation (e.g., Claim ID starts with CLM-, etc.).
-
-<grok-card data-id="fedf84" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-
-### Sample Outputs & Validation
-Example Google Sheets logging:
-
-<grok-card data-id="6187e0" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-
-
-<grok-card data-id="156894" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-
-### Issues & Resolutions
-- Write Row header glitch → Switched to DataTable + Write Range
-- AI inconsistent on diagnosis validation → Handled programmatically
+### Example Validation
+![Diagnosis Code Example](assets/diagnosis-example.png)
 
 ### Benefits
 - Faster processing
-- Reduced errors
-- AI-assisted fraud/risk detection
-- Scalable batch handling
+- Fewer errors
+- AI-powered risk & fraud detection
+- Scalable for hundreds of claims
 
-### Future Ideas
-- Email fraud alerts
-- Claims DB integration
-- Dashboard reporting
-- Webhook triggers
+![Benefits](assets/benefits.png)
 
-### Resources
-- Google Drive folder: [Link](https://drive.google.com/drive/folders/16HjyleCFRGo9hZM9tHw1tvHvxKKA8RqU?usp=drive_link)
-- Sample Output Sheet: [Link](https://docs.google.com/spreadsheets/d/1iq0iYZ-H2KISH396eRveE5dK10SbKhBhRz8pkND4Gf4/edit?usp=drive_link)
-- Full demo video/slides: [Link](https://drive.google.com/file/d/1eSlCKurm7DUzyCAh95t2MsSdQNcn9ajQ/view?usp=drive_link)
+### Future Improvements
+![Future Ideas](assets/future-improvements.png)
+
+### Issues & How I Fixed Them
+- Write Row glitch → switched to DataTable + Write Range  
+- LLM diagnosis validation → handled programmatically  
+
+![Issues Resolved](assets/issues-resolved.png)
+
+### Links
+- Full Google Drive folder: https://drive.google.com/drive/folders/16HjyleCFRGo9hZM9tHw1tvHvxKKA8RqU?usp=drive_link  
+- Sample Output Google Sheet: https://docs.google.com/spreadsheets/d/1iq0iYZ-H2KISH396eRveE5dK10SbKhBhRz8pkND4Gf4/edit?usp=drive_link  
+- Demo video/slides: https://drive.google.com/file/d/1eSlCKurm7DUzyCAh95t2MsSdQNcn9ajQ/view?usp=drive_link
+
+<img width="730" height="1093" alt="image" src="https://github.com/user-attachments/assets/1c2019d5-f23b-4843-bb1d-2820637304ba" />
